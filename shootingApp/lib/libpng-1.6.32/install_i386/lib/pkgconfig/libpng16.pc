@@ -1,0 +1,12 @@
+prefix=/Users/tetsushi2/Documents/Develop/shootingApp/shootingApp/lib/libpng-1.6.32/install_i386
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/libpng16
+
+Name: libpng
+Description: Loads and saves PNG files
+Version: 1.6.32
+Requires: zlib
+Libs: -L${libdir} -lpng16
+Libs.private: -lz 
+Cflags: -I${includedir}
